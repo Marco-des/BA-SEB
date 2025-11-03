@@ -18,14 +18,14 @@ def gleitstrecke(starthöhe, höhenverlust, höhenreserve):
     return strecke
 
 def gleitstrecke_ausgabe():
-        print(f" {gleitstrecke: 2f} km")
+        print(f"Die Gleitstrecke ist {gleitstrecke: 2f} km")
 
 def main():
       eingabe_starthoehe = float (input("Starthoehe in m:"))
       eingabe_hoehenverlust = float (input("Welchen Hoehenverlust in m/km:"))
       eingabe_hoehenreserve = float (input("Welche Hoehenreserve in m"))
 
-      gleitstrecke = (eingabe_starthoehe, eingabe_hoehenverlust, eingabe_hoehenreserve)
-      gleitstrecke_ausgabe(gleitstrecke)
+      strecke = gleitstrecke(eingabe_starthoehe, eingabe_hoehenverlust, eingabe_hoehenreserve)
+      gleitstrecke_ausgabe9(strecke)
 
-main
+main()
